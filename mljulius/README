@@ -1,0 +1,221 @@
+Pasos
+	- Reconocimiento de voz con julius
+	- Interpretacion de lo reconocido
+	- Reproduccion de respuesta con festival
+
+Necesarios
+
+	sample.grammar (definiciones de gramatica)
+	sample.voca (definiciones de vocabulario)
+	prompts.txt (archivo de indice de palabras)
+	train/wav (grabaciones con correspondencia a prompts.txt)
+	codetrain.scp (lista de grabaciones wav a convertir en mfcc)
+	train.scp (lista de archivos convertidos mfcc)
+
+### sample.grammar
+
+S: NS_B LLAMADA NS_E
+S: NS_B ACCION DIRECCION NS_E
+S: NS_B ACCION ARTICULO DIRECCION NS_E
+
+### sample.voca
+
+% NS_B
+<s> sil
+
+% NS_E
+<s> sil
+
+% LLAMADA
+MARCELINO m a r z e l i n o
+
+% ACCION
+EJECUTA e j e k u t a
+DIME d i m e
+BUSCA b u s k a
+SALUDA s a l u d a
+HOLA o l a
+
+% ARTICULO
+EL e l
+LA l a
+A a
+
+% DIRECCION
+TERMINAL t e r m i n a l
+FIREFOX f i r e f o x
+TIEMPO t i e m p o
+YOLANDA y o l a n d a
+MARCELINO m a r z e l i n o
+
+### prompts.txt
+
+*/muestra1 MARCA UNO DOS TRES CUATRO CINCO SEIS SIETE VILCHEZ NUEVE OH CERO
+*/muestra2 MARCA UNO TRES CINCO SIETE NUEVE CERO DOS CUATRO SEIS OH
+*/muestra3 MARCA CERO NUEVE SIETE CINCO TRES UNO SEIS CUATRO DOS
+*/muestra4 MARCA UNO DOS DOS TRES TRES CUATRO CUATRO CINCO
+*/muestra5 MARCA SEIS SEIS SIETE SIETE NUEVE NUEVE OH OH CERO CERO
+*/muestra6 TELEFONO PACO PEREZ LLAMA PACO PEREZ
+*/muestra7 TELEFONO PACO LLAMA TELEFONO DE PACO PEREZ LLAMA PEREZ
+*/muestra8 TELEFONO TELEFONO PACO PACO LLAMA LLAMA PEREZ PEREZ
+*/muestra9 MEDIDA COMIDA Y COMIDA MEDIDA MUY
+*/muestra10 QUEJAS REJAS AVION CAMION RUBICON
+*/muestra11 HERMANA MANADA MANUAL KENYA SEMANA
+*/muestra12 CORREA CODIGO RODRIGO ROMERO BORREGO CORDERO
+*/muestra13 PUERTA PIERNA POZO AGATA AGOBIO ARMADA
+*/muestra14 ABALON ABDOMINALES ABUSO BUZO BERZA
+*/muestra15 ABONO ADORNO ALISAR AFECTAR EFECTO OFELIA
+*/muestra16 ALCANZAR ACUPUNTURA ACTUAL AVENTURA OBSTRUYE OYE PAYASO
+*/muestra17 ALGORITMO ALGUNA OTRA VERDE VENTA VENTANA
+*/muestra18 BATALLA MESTALLA METAL DESAYUNO DESCALZO
+*/muestra19 ROTO CORTO MUERTO DESEMPEÑO ENTRADAS MONTOYA MOYA NEOYORQUINO
+*/muestra20 DICOTOMIA DISLEXIA ANOREXIA AXIOMA MARCHA MALTRECHA MARIACHI MEDIANOCHE
+*/muestra21 BOBINA BOLONIA COLONIA ARMONIA ARMISTICIO
+*/muestra22 COLECCION COLORACION COMBINACION COMERCIAL
+*/muestra23 AGUJA BURBUJA BRUJA ABEJA IDENTIFICA INDEFINIDA INFORMAL
+*/muestra24 DERECHO BARBECHO TECHO YATE YODO AYER
+*/muestra25 MAÑANA PESTAÑA CAMPAÑA ENTRAÑAS LIMITROFES MAFIA
+*/muestra26 CUBA CUBULAR CUMULATIVO ACALLAR ALCANTARILLADO ALLI
+*/muestra27 CURADO CICLISMO COAXIAL AMARILLO AMPOLLAS CABALLO
+*/muestra28 AÑORA CASTAÑA PANAMEÑO NIÑO NIÑA MAGNIFICO MALEFICA MAMIFERO
+*/muestra29 DIGITAL TACTIL ANUAL PASTORAL CLIMAX COEXISTENCIA CONEXION
+*/muestra30 AMNESIA ASIA ASIDUO ASEMEJA CONTEXTO EXACTA EXAMEN
+*/muestra31 HOLA COLA BOLA MOLA YOLANDA YESO FERREA FORRADA GORRAS GUERRA
+*/muestra32 VOXFORGE INICIO LEER ESCUCHAR HALLAR HERMOSILLO HUELLA HUMILLACION
+*/muestra33 PLAY INICIAR SIGUIENTE SALTAR HACIA ADELANTE PREVIO ATRAS
+*/muestra34 MUSICA MOSTRAR QUIEN SOBRE INFORMACION BAJA BAJO INFERIOR
+*/muestra35 JUGADOR SUBIR ARRIBA PARA PARAR SILENCIO
+*/muestra36 TIEMPO ORDENADOR COMPUTADORA VOLUMEN CORREO ELECTRONICO
+*/muestra37 COMPUTERIZADO AMPUTADO MINICOMPUTADORA PUMA SUMA
+*/muestra38 BOTON AMPUTACION AGUDA ACEPTAR IMAGEN APAGAR
+*/muestra39 GOOGLE FEMENINO MASCULINO BUSCAR LEER LEE ESCRIBE ESCRIBIR
+*/muestra40 DAVID SALUDAR SALUDA ENCIENDE ENCENDER
+
+### train/wav
+
+-rw-rw-r-- 1 daribes daribes 152778 may 28 16:44 muestra10.wav
+-rw-rw-r-- 1 daribes daribes 187178 may 28 16:44 muestra11.wav
+-rw-rw-r-- 1 daribes daribes 181578 may 28 16:44 muestra12.wav
+-rw-rw-r-- 1 daribes daribes 198378 may 28 16:44 muestra13.wav
+-rw-rw-r-- 1 daribes daribes 181578 may 28 16:44 muestra14.wav
+-rw-rw-r-- 1 daribes daribes 194380 may 28 16:44 muestra15.wav
+-rw-rw-r-- 1 daribes daribes 262346 may 28 16:44 muestra16.wav
+-rw-rw-r-- 1 daribes daribes 180778 may 28 16:44 muestra17.wav
+-rw-rw-r-- 1 daribes daribes 196778 may 28 16:44 muestra18.wav
+-rw-rw-r-- 1 daribes daribes 255944 may 28 16:44 muestra19.wav
+-rw-rw-r-- 1 daribes daribes 331914 may 28 16:44 muestra1.wav
+-rw-rw-r-- 1 daribes daribes 258346 may 28 16:44 muestra20.wav
+-rw-rw-r-- 1 daribes daribes 173576 may 28 16:44 muestra21.wav
+-rw-rw-r-- 1 daribes daribes 159178 may 28 16:44 muestra22.wav
+-rw-rw-r-- 1 daribes daribes 246346 may 28 16:44 muestra23.wav
+-rw-rw-r-- 1 daribes daribes 182378 may 28 16:44 muestra24.wav
+-rw-rw-r-- 1 daribes daribes 205578 may 28 16:44 muestra25.wav
+-rw-rw-r-- 1 daribes daribes 197580 may 28 16:44 muestra26.wav
+-rw-rw-r-- 1 daribes daribes 198378 may 28 16:44 muestra27.wav
+-rw-rw-r-- 1 daribes daribes 238346 may 28 16:44 muestra28.wav
+-rw-rw-r-- 1 daribes daribes 215146 may 28 16:44 muestra29.wav
+-rw-rw-r-- 1 daribes daribes 292714 may 28 16:44 muestra2.wav
+-rw-rw-r-- 1 daribes daribes 235146 may 28 16:44 muestra30.wav
+-rw-rw-r-- 1 daribes daribes 298314 may 28 16:44 muestra31.wav
+-rw-rw-r-- 1 daribes daribes 281546 may 28 16:44 muestra32.wav
+-rw-rw-r-- 1 daribes daribes 233546 may 28 16:44 muestra33.wav
+-rw-rw-r-- 1 daribes daribes 245544 may 28 16:44 muestra34.wav
+-rw-rw-r-- 1 daribes daribes 190378 may 28 16:44 muestra35.wav
+-rw-rw-r-- 1 daribes daribes 204778 may 28 16:44 muestra36.wav
+-rw-rw-r-- 1 daribes daribes 175180 may 28 16:44 muestra37.wav
+-rw-rw-r-- 1 daribes daribes 192778 may 28 16:44 muestra38.wav
+-rw-rw-r-- 1 daribes daribes 242346 may 28 16:44 muestra39.wav
+-rw-rw-r-- 1 daribes daribes 270346 may 28 16:44 muestra3.wav
+-rw-rw-r-- 1 daribes daribes 163978 may 28 16:44 muestra40.wav
+-rw-rw-r-- 1 daribes daribes 245546 may 28 16:44 muestra4.wav
+-rw-rw-r-- 1 daribes daribes 310314 may 28 16:44 muestra5.wav
+-rw-rw-r-- 1 daribes daribes 175978 may 28 16:44 muestra6.wav
+-rw-rw-r-- 1 daribes daribes 226344 may 28 16:44 muestra7.wav
+-rw-rw-r-- 1 daribes daribes 214346 may 28 16:44 muestra8.wav
+-rw-rw-r-- 1 daribes daribes 179978 may 28 16:44 muestra9.wav
+
+### codetrain.scp
+
+train/wav/muestra1.wav train/mfcc/muestra1.mfc
+train/wav/muestra2.wav train/mfcc/muestra2.mfc
+train/wav/muestra3.wav train/mfcc/muestra3.mfc
+train/wav/muestra4.wav train/mfcc/muestra4.mfc
+train/wav/muestra5.wav train/mfcc/muestra5.mfc
+train/wav/muestra6.wav train/mfcc/muestra6.mfc
+train/wav/muestra7.wav train/mfcc/muestra7.mfc
+train/wav/muestra8.wav train/mfcc/muestra8.mfc
+train/wav/muestra9.wav train/mfcc/muestra9.mfc
+train/wav/muestra10.wav train/mfcc/muestra10.mfc
+train/wav/muestra11.wav train/mfcc/muestra11.mfc
+train/wav/muestra12.wav train/mfcc/muestra12.mfc
+train/wav/muestra13.wav train/mfcc/muestra13.mfc
+train/wav/muestra14.wav train/mfcc/muestra14.mfc
+train/wav/muestra15.wav train/mfcc/muestra15.mfc
+train/wav/muestra16.wav train/mfcc/muestra16.mfc
+train/wav/muestra17.wav train/mfcc/muestra17.mfc
+train/wav/muestra18.wav train/mfcc/muestra18.mfc
+train/wav/muestra19.wav train/mfcc/muestra19.mfc
+train/wav/muestra20.wav train/mfcc/muestra20.mfc
+train/wav/muestra21.wav train/mfcc/muestra21.mfc
+train/wav/muestra22.wav train/mfcc/muestra22.mfc
+train/wav/muestra23.wav train/mfcc/muestra23.mfc
+train/wav/muestra24.wav train/mfcc/muestra24.mfc
+train/wav/muestra25.wav train/mfcc/muestra25.mfc
+train/wav/muestra26.wav train/mfcc/muestra26.mfc
+train/wav/muestra27.wav train/mfcc/muestra27.mfc
+train/wav/muestra28.wav train/mfcc/muestra28.mfc
+train/wav/muestra29.wav train/mfcc/muestra29.mfc
+train/wav/muestra30.wav train/mfcc/muestra30.mfc
+train/wav/muestra31.wav train/mfcc/muestra31.mfc
+train/wav/muestra32.wav train/mfcc/muestra32.mfc
+train/wav/muestra33.wav train/mfcc/muestra33.mfc
+train/wav/muestra34.wav train/mfcc/muestra34.mfc
+train/wav/muestra35.wav train/mfcc/muestra35.mfc
+train/wav/muestra36.wav train/mfcc/muestra36.mfc
+train/wav/muestra37.wav train/mfcc/muestra37.mfc
+train/wav/muestra38.wav train/mfcc/muestra38.mfc
+train/wav/muestra39.wav train/mfcc/muestra39.mfc
+train/wav/muestra40.wav train/mfcc/muestra40.mfc
+
+### train.scp
+
+train/mfcc/muestra1.mfc
+train/mfcc/muestra2.mfc
+train/mfcc/muestra3.mfc
+train/mfcc/muestra4.mfc
+train/mfcc/muestra5.mfc
+train/mfcc/muestra6.mfc
+train/mfcc/muestra7.mfc
+train/mfcc/muestra8.mfc
+train/mfcc/muestra9.mfc
+train/mfcc/muestra10.mfc
+train/mfcc/muestra11.mfc
+train/mfcc/muestra12.mfc
+train/mfcc/muestra13.mfc
+train/mfcc/muestra14.mfc
+train/mfcc/muestra15.mfc
+train/mfcc/muestra16.mfc
+train/mfcc/muestra17.mfc
+train/mfcc/muestra18.mfc
+train/mfcc/muestra19.mfc
+train/mfcc/muestra20.mfc
+train/mfcc/muestra21.mfc
+train/mfcc/muestra22.mfc
+train/mfcc/muestra23.mfc
+train/mfcc/muestra24.mfc
+train/mfcc/muestra25.mfc
+train/mfcc/muestra26.mfc
+train/mfcc/muestra27.mfc
+train/mfcc/muestra28.mfc
+train/mfcc/muestra29.mfc
+train/mfcc/muestra30.mfc
+train/mfcc/muestra31.mfc
+train/mfcc/muestra32.mfc
+train/mfcc/muestra33.mfc
+train/mfcc/muestra34.mfc
+train/mfcc/muestra35.mfc
+train/mfcc/muestra36.mfc
+train/mfcc/muestra37.mfc
+train/mfcc/muestra38.mfc
+train/mfcc/muestra39.mfc
+train/mfcc/muestra40.mfc
