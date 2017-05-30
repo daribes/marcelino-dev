@@ -1,8 +1,3 @@
-Pasos
-	- Reconocimiento de voz con julius
-	- Interpretacion de lo reconocido
-	- Reproduccion de respuesta con festival
-
 Necesarios
 
 	sample.grammar (definiciones de gramatica)
