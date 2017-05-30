@@ -1,1 +1,5 @@
 Desarrollo de un asistente utilizando julius
+
+- escucha/ - Reconocimiento de voz (stt), con julius.
+- piensa/  - Analisis en base de conocimientos (con PROLOG). NO CREADO
+- habla/   - Sintesis de voz (tts) con festival y cliente para servidor julius con pyjulius3.
