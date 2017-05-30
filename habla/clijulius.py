@@ -16,8 +16,8 @@ def habla(frase):
 # vamos a intentar hacer algo inteligente
 def piensa(resultado):
     frase = ''
-    for x in range(0,len(result.words)):
-        frase = frase+' '+result.words[x].word
+    for x in range(0,len(resultado.words)):
+        frase = frase+' '+resultado.words[x].word
     frase = frase.strip()
 
     if frase == 'MARCELINO':

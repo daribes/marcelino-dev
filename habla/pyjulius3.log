@@ -1,0 +1,141 @@
+INFO:pyjulius3.core:Connecting localhost:10500
+INFO:pyjulius3.core:Started listening
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTPROC' at 0x7f08fa63e110>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08fa63e8d0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08fa63e990>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7f08fa63ea50>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08fa63eb10>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7f08fa63ebd0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7f08fa63ec90>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'RECOGFAIL' at 0x7f08fa63ec50>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08fa63eb10>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08fa63eb50>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7f08fa63ea10>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08fa63e950>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7f08fa63e890>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7f08fa63e0d0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'RECOGFAIL' at 0x7f08fa63ed50>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08fa63ee10>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08fa63eed0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7f08fa63ef90>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08f8ec0090>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7f08f8ec0150>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7f08f8ec0210>
+INFO:pyjulius3.core:Modelized recognition: <Sentence(-3649.79, [<Word(1.00, MARCELINO)>])>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08f8ec0590>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08f8ec0690>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7f08f8ec0750>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08f8ec0810>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7f08f8ec08d0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7f08f8ec0990>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'RECOGFAIL' at 0x7f08f8ec0a50>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08f8ec0b10>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08f8ec0bd0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7f08f8ec0c90>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08f8ec0d50>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7f08f8ec0e10>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7f08f8ec0ed0>
+INFO:pyjulius3.core:Modelized recognition: <Sentence(-2707.41, [<Word(0.98, HOLA)>, <Word(1.00, TIEMPO)>])>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08f8ed3290>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08f8ed3350>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7f08f8ed3410>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08f8ed34d0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7f08f8ed3590>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7f08f8ed3650>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'RECOGFAIL' at 0x7f08f8ed3710>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08f8ec0f50>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08f8ec0fd0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7f08f8ec0dd0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08f8ec0cd0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7f08f8ec0b90>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7f08f8ec0a90>
+INFO:pyjulius3.core:Modelized recognition: <Sentence(-3097.01, [<Word(0.87, HOLA)>, <Word(1.00, TIEMPO)>])>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08f8ec04d0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7f08f8ec02d0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7f08f8ec0390>
+INFO:pyjulius3.core:Connecting localhost:10500
+INFO:pyjulius3.core:Started listening
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTPROC' at 0x7ffae268e110>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae268e8d0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae268e990>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7ffae268ea50>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae268eb10>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7ffae268ebd0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7ffae268ec90>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'RECOGFAIL' at 0x7ffae268ec50>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae268eb10>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae268eb50>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7ffae268ea10>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae268e950>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7ffae268e890>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7ffae268e0d0>
+INFO:pyjulius3.core:Modelized recognition: <Sentence(-3582.25, [<Word(1.00, MARCELINO)>])>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f11050>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f11110>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7ffae0f111d0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f11290>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7ffae0f11350>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7ffae0f11410>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'RECOGFAIL' at 0x7ffae0f114d0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f11590>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f11650>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7ffae0f11710>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f117d0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7ffae0f11890>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7ffae0f11950>
+INFO:pyjulius3.core:Modelized recognition: <Sentence(-6647.48, [<Word(0.99, HOLA)>, <Word(0.97, YOLANDA)>])>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f11c50>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f11d10>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7ffae0f11dd0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f11e90>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7ffae0f11f50>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7ffae0f23050>
+INFO:pyjulius3.core:Modelized recognition: <Sentence(-11926.37, [<Word(1.00, MARCELINO)>])>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f11c10>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f23350>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7ffae0f23410>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f234d0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7ffae0f23590>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7ffae0f23650>
+INFO:pyjulius3.core:Modelized recognition: <Sentence(-16981.40, [<Word(0.99, BUSCA)>, <Word(0.98, YOLANDA)>])>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae268ed90>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae268e850>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7ffae268e910>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae268e9d0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7ffae268ead0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7ffae268ec90>
+INFO:pyjulius3.core:Modelized recognition: <Sentence(-5010.02, [<Word(0.95, HOLA)>, <Word(0.98, YOLANDA)>])>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae268ed50>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f23490>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7ffae0f233d0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f23310>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7ffae0f230d0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7ffae0f23150>
+INFO:pyjulius3.core:Modelized recognition: <Sentence(-8659.89, [<Word(0.57, MARCELINO)>])>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f23550>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f23990>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7ffae0f23a50>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f23b10>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7ffae0f23bd0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7ffae0f23c90>
+INFO:pyjulius3.core:Modelized recognition: <Sentence(-19433.21, [<Word(0.94, EJECUTA)>, <Word(1.00, EL)>, <Word(0.95, YOLANDA)>])>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f21050>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f21110>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7ffae0f211d0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f21290>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7ffae0f21350>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7ffae0f21410>
+INFO:pyjulius3.core:Modelized recognition: <Sentence(-9837.08, [<Word(1.00, DIME)>, <Word(0.78, MARCELINO)>])>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f23f90>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f21750>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7ffae0f21810>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f218d0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'ENDRECOG' at 0x7ffae0f21990>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUTPARAM' at 0x7ffae0f21a50>
+INFO:pyjulius3.core:Modelized recognition: <Sentence(-3617.52, [<Word(0.60, DIME)>, <Word(0.99, YOLANDA)>])>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f216d0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'INPUT' at 0x7ffae0f21dd0>
+INFO:pyjulius3.core:Unmodelized xml: <Element 'STARTRECOG' at 0x7ffae0f21e90>
+INFO:pyjulius3.core:Disconnecting...
+INFO:pyjulius3.core:Disconnected
+INFO:pyjulius3.core:Stopped listening
