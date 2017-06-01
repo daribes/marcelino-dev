@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# Este script sirve para crear un archivo de correspondecia fonetica 
+# desde un archivo cualquiera que tenga una sola palabra por linea
+
 import sys
 
 try:
@@ -32,12 +35,6 @@ for linea in fr.xreadlines():
 			cletra += 1
 		else:
 			break
-#	ñ es \xc3\xb1
-#	á es
-#	é es
-#	í es
-#	ó es
-#	ú es
 	cletra = 0
 	ppalabra = ''
 	while cletra < len(palabra):

@@ -1,0 +1,11 @@
+Para utilizar estos dos scripts correctamente lo que tenemos que hacer es escribir un archivo con una frase en cada linea.
+El archivo por defecto es "frases.txt" pero se puede utilizar otro escrito igual pasandolo como parametro a entrena.py
+
+El script entrena.py:
+	- Graba automática de archivos de audio
+	- Muestra en pantalla de frases a grabar
+
+El script genera_archivos.py:
+	- Genera archivo prompts.txt
+	- Genera archivo train.scp
+	- Genera archivo codetrain.scp
