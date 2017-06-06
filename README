@@ -1,5 +1,61 @@
 Desarrollo de un asistente utilizando julius
 
-- escucha/ - Reconocimiento de voz (stt), con julius.
-- piensa/  - Analisis en base de conocimientos (con PROLOG). NO CREADO
-- habla/   - Sintesis de voz (tts) con festival y cliente para servidor julius con pyjulius3.
+  - escucha/     - Reconocimiento de voz (stt), con julius.
+  - piensa/      - Analisis en base de conocimientos (con PROLOG). NO CREADO
+  - piensa_duro/ - Procesamiento paralelo mediante cluster de RPi3. NO CREADO
+  - habla/       - Sintesis de voz (tts) con festival y cliente para servidor julius con pyjulius3.
+
+USO DE marcelino-dev
+
+En este archivo se recopilan las instrucciones para el uso de marcelino-dev.
+
+1.- "escucha" Crear el modelo de lenguaje
+  Para poder crear un modelo de lenguaje con el script guion.py hay que tener creados los archivos:
+    - definiciones/sample.voca
+    - definiciones/sample.grammar
+    - con/prompts.txt
+    - con/codetrain.scp
+    - con/train.scp
+
+  - sample.voca
+    En este archivo se define el vocabulario que usará julius. Contiene las palabras y su correspondencia fonética, dentro de una estructura de etiquetas que se usara en el archivo sample.grammar para definir la gramatica. En este archivo podemos definir la estructura básica de la construcción de oraciones. Tambien están aquía las definiciones de los silencios.
+      ej.:  % LLAMADA
+            MARCELINO m a r z e l i n o
+
+      definiciones de silencios:
+            % NS_B
+            <s> sil
+
+            % NS_E
+            <s> sil
+
+  - sample.grammar
+    En este archivo se define la estructura gramatical de las frases que construirá julius. Esto quiere decir que segun los niveles que le definamos, buscará estas palabras dentro de las etiquetas definidas dentro del archivo sample.voca.
+      ej.:  S: NS_B LLAMADA NS_E
+            S: NS_B ACCION DIRECCION NS_E
+            S: NS_B ACCION ARTICULO DIRECCION NS_E
+
+      la estructura de cada linea debe ser como se muestra, "S:" para definir la sentencia, "NS_B" para definir el silencio de inicio, "LLAMADA" etiqueta correspondiente a su nivel en el archivo sample.voca, "NS_E" para definir el silencio de fin. Se pueden definir diferentes construcciones gramaticales como se muestra en el ejemplo.
+
+  - prompts.txt
+    En este archivo se definenn las palabras que existen en los archivos de audio grabados, el script genera_archivos.py dentro del entrenador nos ayudara a crear este archivo.
+
+  - codetrain.scp
+    En este archivo se relacionan las correspondencias a convertir entre archivos .wav y .mfc, cada uno de los archivos wav correspondera a un archivo mfc.
+      ej.: train/wav/muestra1.wav train/mfcc/muestra1.mfc
+
+      el script genera_archivos.py tambien nos ayudara en esta tarea.
+
+  - train.scp
+    En este archivo estan contenidas las rutas a los archivos .mfc, el script genera_archivos.py tambien nos salvará de esta tarea.
+
+  COMO AÑADIR PALABRAS AL MODELO DE LENGUAJE
+
+    Antes de crear los archivos necesarios para que julius, julia y htk puedan generar el modelo de lenguaje, hay que entrenarlo. En la carpeta "entrenador" hay dos scripts con este proposito. El primero es "entrena.py" que mediante el archivo "frases" utiliza el texto que alli hay escrito (una frase por linea) para generar los archivos necesarios train/wav y prompts.txt para luego usarlos con el script "guion.py"
+
+    Para poder realizar esta tarea hay que regenerar el modelo de lenguaje en sí, o sea, hay que modificar el archivo sample.voca añadiendo las palabras que consideremos en el nivel que consideremos y ejecutar el script guion.py para que automaticamente se regenere el modelo de lenguaje. La idea es que todo esto sea automático y por eso construiremos el modelo de lenguaje pensando en su uso final que será usarlo contra una base de conocimientos de PROLOG.
+
+  COMO EJECUTARLO
+
+    Cuando se genera el modelo de lenguaje, este se crea dentro de la carpeta "mljulius", con el archivo sample.jconf, podemos ejecutar el scrip inicio_escucha.py para que el servidor de julius se ponga a correr con el modelo de lenguaje que hemos generado.
+    Solo nos quedaria abrir otro terminal y ejecutar el script "clijulius.py" que esta dentro de la carpeta "habla" para poder interacutar con marcelino.

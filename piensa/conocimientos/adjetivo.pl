@@ -1,0 +1,3 @@
+adjetivo(bueno).
+adjetivo(malo).
+

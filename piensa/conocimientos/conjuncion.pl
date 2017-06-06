@@ -1,0 +1,2 @@
+conjuncion(que).
+conjuncion(pero).

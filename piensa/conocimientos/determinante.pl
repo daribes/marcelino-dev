@@ -1,0 +1,3 @@
+determinante(mi).
+determinante(este).
+

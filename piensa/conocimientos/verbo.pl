@@ -1,0 +1,2 @@
+verbo(ser).
+verbo(estar).

@@ -1,0 +1,2 @@
+articulo(el).
+articulo(la).
